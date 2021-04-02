@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 1170px;
+    margin: auto;
+}
+.col-md-12, .col-xs-12{
+    width: 100%;
+}
+.col-md-2{
+    width: 16.66%;
+}
+.col-md-8{
+    width: 66.68%;
+}
+.col-md-1{
+    width: 8.33%;
+}
+.col-md-3{
+    width: 25%;
+}
+.head1{
+    background-color: rgb(186, 0, 0);
+}
+.head2{
+    background-color: rgb(255, 204, 0);   
+}
