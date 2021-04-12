@@ -226,23 +226,39 @@ li .fa-caret-right{
     flex-direction: column;
     justify-content: space-between;
 }
-ul{
+.col-md-4 ul{
     padding: 30px;
 }
 .col-md-4 h6{
     padding-left: 30px;
 }
 .help-form{
-    padding: 40px;
+    
     width: 570px;
     height: 535px;
     background-color: rgb(186, 0, 0);
 }
+.help-form button{
+    width: 49%;
+    padding: 22px 35px;
+    background: none;
+    font-size: 9pt;
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+.help-form button:hover, .help-form button:active{
+    background-color: rgb(255, 204, 0);
+    color: rgb(186, 0, 0)
+}
 .help-form select{
-    width: 100%;
+    width: 490px;
+    border: 2px solid white;
     background-color: rgb(186, 0, 0);
     padding: 20px;
     margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .help-form option .fa-caret-right{
     color:rgb(255, 204, 0);
