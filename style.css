@@ -232,8 +232,7 @@ li .fa-caret-right{
 .col-md-4 h6{
     padding-left: 30px;
 }
-.help-form{
-    
+.help-form{    
     width: 570px;
     height: 535px;
     background-color: rgb(186, 0, 0);
@@ -259,6 +258,7 @@ li .fa-caret-right{
     margin-bottom: 20px;
     margin-left: 40px;
     margin-right: 40px;
+
 }
 .help-form option .fa-caret-right{
     color:rgb(255, 204, 0);
