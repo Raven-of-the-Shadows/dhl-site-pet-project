@@ -25,6 +25,11 @@ b{
     padding-top: 16px;
     padding-bottom: 16px;
 }
+header{
+    position: sticky;
+    top: 0;
+    margin: auto;
+}
 .head2{
     background-color: rgb(255, 204, 0);   
     padding-top: 35px;
@@ -39,6 +44,7 @@ b{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 .language{
     margin-left: 15px;
@@ -56,7 +62,6 @@ b{
     color: white;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-
 }
 .main-menu{
     display: flex;
@@ -64,7 +69,6 @@ b{
     align-content: center;
     justify-content: space-between;
     line-height: 50px;
-
 }
 .main-menu a{
     color:rgb(186, 0, 0);
@@ -72,20 +76,12 @@ b{
     font-size: 1em;
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
-    padding:10px;
+    padding:44px 10px;
+    border-bottom: rgb(255, 204, 0) 5px solid;
 }
-.main-menu li{
-    margin-top: -35px;
-    margin-bottom: -35px;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    border-bottom: 5px rgb(255, 204, 0) solid;
-}
-.main-menu li:active{
-    border-bottom: rgb(186, 0, 0) 5px solid;
-}
-.main-menu li a:active{
+.main-menu li a:hover, .main-menu li a:active, .current a{
     font-weight: bold;
+    border-bottom: rgb(186, 0, 0) 5px solid;
 }
 .search-circle{
     background-color: rgb(186, 0, 0);
@@ -95,11 +91,15 @@ b{
     background-image: url(images/search.png);
     background-repeat: no-repeat;
     background-position: 18px 18px;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.75);
 }
 .search{
     width: 25%;
     display: flex;
     justify-content: flex-end;
+}
+.fa-chevron-down{
+    font-size: 10px;
 }
 
 /*-----------------------------------------------------MAIN---------------------------------------------------*/
@@ -111,7 +111,7 @@ b{
     margin: auto;
     background-position: center;
 }
-.col-md-1{
+.line{
     margin-top: 60px;
     border-bottom: 5px rgb(255, 204, 0) solid;
 }
@@ -161,7 +161,7 @@ h6{
 .buttons{
     margin-top: 45px;
 }
-.buttons button{
+.button{
     padding: 22px 35px;
     background: none;
     border: 3px solid white;
@@ -171,7 +171,7 @@ h6{
     font-weight: bold;
     color: white;
 }
-.col-md-4 button:hover{
+.button:hover{
     background-color: rgb(255, 204, 0);
     border: 3px solid rgb(255, 204, 0);
     color: rgb(186, 0, 0)
@@ -207,15 +207,12 @@ p{
 .fa-caret-right{
     color:rgb(186, 0, 0);
 }
-li .fa-caret-right{
+.yellow{
     color:rgb(255, 204, 0);
     margin-right: 10px;
     margin-bottom: 12px;
 }
 #logistics{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background-image: url(images/video-img.png);
     background-repeat: no-repeat;
     height: 700px;
@@ -233,7 +230,7 @@ li .fa-caret-right{
     padding-left: 30px;
 }
 .help-form{    
-    width: 570px;
+    
     height: 535px;
     background-color: rgb(186, 0, 0);
 }
@@ -245,6 +242,7 @@ li .fa-caret-right{
     font-weight: bold;
     color: white;
     border: none;
+    margin-bottom: 40px;
 }
 .help-form button:hover, .help-form button:active{
     background-color: rgb(255, 204, 0);
@@ -274,3 +272,44 @@ h5{
     font-size: 22pt;
     color: white;
 }
+.shadow-box{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.start-round-button{
+    background-color: rgb(255, 204, 0);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(images/play-icon.png);
+    background-repeat: no-repeat;
+    background-position: 19px 16px;
+    margin: auto;
+    box-shadow: 0 0 10px 1px rgb(255, 204, 0);
+}
+#press{
+    padding: 50px 50px;
+}
+.learn-more{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.learn-more button{
+    padding: 22px 35px;
+    background: none;
+    background-color: rgb(148, 0, 0);
+    border: 3px solid white;
+    border-radius: 10em;
+    margin-right: 15px;
+    font-size: 9pt;
+    font-weight: bold;
+    color: white;
+}
+
+
